@@ -1,0 +1,19 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  --color-main: rgb(27, 85, 27);
+
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 12vh
+}
+
+body{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}

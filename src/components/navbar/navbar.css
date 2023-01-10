@@ -1,0 +1,130 @@
+.navbar_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    transition: .5s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrolled{
+    position: fixed;
+    background-color:#fff;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    transition: .5s all ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  
+}
+
+
+
+.navbar_container-brand{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 5vw;
+    color: var(--color-main);
+}
+
+.logo img{
+height: 7vh;
+}
+
+.navbar_container-links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5vw;
+   
+}
+
+.nav-links{
+    display: flex;
+    gap: 2vw;
+}
+
+
+.nav-links  a {
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--color-main);
+}
+
+.navbar_container-links-toggle{
+    display: none;
+    width: 40%;
+    height: 50%;
+    justify-content: flex-end;
+}
+
+.nav_toggle-container-links{
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.toggle-links{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.toggle-links a{
+    color: var(--color-main);
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1300px){
+.navbar_container-brand h2 {
+    font-size: 1.2rem;
+}
+}
+
+@media screen and (max-width: 500px){
+    .navbar_container{
+        justify-content: space-between;
+        background-color: #fff;
+        
+    }
+
+    .navbar_container-links-toggle{
+        display: flex;
+    }
+       
+
+    .navbar_container-brand{
+        margin-left: 2vw;
+        width:60% ;
+    }
+
+    .navbar_container-links-toggle{
+        margin-right: 2vw;
+    }
+        
+    .navbar_container h2{
+        font-size: 4vw;
+    }
+  .navbar_container-links{
+    display: none;
+  }
+}

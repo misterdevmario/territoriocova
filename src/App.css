@@ -1,0 +1,103 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("./assets/casas1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px 950px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.bg-info {
+  width: 100%;
+  height: 72vh;
+  color: var(--color-main);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-info-box1 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15vw;
+}
+.bg-info-box2 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0vw;
+}
+
+.bg-info-p1 {
+  width: 70vh;
+  height: 24vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid var(--color-main);
+}
+.bg-info-p2 {
+  width: 70vh;
+  height: 24vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid var(--color-main);
+}
+
+@media screen and (max-width: 1300px) {
+  .bg-img {
+    background-size: 1280px 600px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bg-info {
+    height: 40%;
+    padding: 1vw;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg-img {
+    background-size: 200vw 100vh;
+  }
+
+  .bg-info {
+    line-height: 1.2;
+    padding: 2vw;
+    height: 50%;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+
+  .bg-info-box1, .bg-info-box2{
+    margin: 0;
+    width: 90%;
+  }
+}
