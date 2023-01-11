@@ -15,7 +15,6 @@
   align-items: center;
 }
 .servicios_name h1 {
- 
   color: var(--color-main);
 }
 .servicios_container-card {
@@ -33,62 +32,62 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 7px;
+
   color: var(--color-main);
 }
 
-.servicios_card img{
-    height: 20vh;
+.servicios_card img {
+  height: 20vh;
 }
 
-.servicios_card-info{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
+.servicios_card-info {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.servicios_card-info h2 {
+  width: 100%;
+  height: 20%;
+  margin-top: 5vh;
+}
+
+.servicios_card-info p {
+  width: 100%;
+  height: 80%;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1300px) {
+  .servicios_name h1 {
+    font-size: 1.5rem;
+  }
+  .servicios_card-info {
+    font-size: 0.8rem;
+    min-height: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .servicios_container {
+    min-height: 280vh;
+  }
+
+  .servicios_name h1 {
+    margin-top: 10vh;
+  }
+  .servicios_container-card {
     flex-direction: column;
-    text-align: center;
-}
-
-.servicios_card-info h2{
-    width: 100%;
-    height: 20%;
-    margin-top: 5vh;
-}
-
-.servicios_card-info p{
-    width: 100%;
-    height: 80%;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 1300px){
-     .servicios_name h1{
-font-size: 1.5rem;
-     }
-    .servicios_card-info{
-        font-size: .8rem;
-        min-height: 80%;
-    }
-}
-
-@media screen and (max-width:500px){
-    .servicios_container{
-        min-height: 280vh;
-    }
-
-    .servicios_name h1{
-margin-top: 10vh;
-    }
-    .servicios_container-card {
-        flex-direction: column;
-        height: 250vh;
-    }
-    .servicios_card{
-        width: 80%;
-        height:40vh ;
-        border-bottom: 4px solid var(--color-main);
-    }
+    height: 250vh;
+  }
+  .servicios_card {
+    width: 80%;
+    height: 40vh;
+    border-bottom: 4px solid var(--color-main);
+  }
 }

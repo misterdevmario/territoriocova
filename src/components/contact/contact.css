@@ -1,0 +1,82 @@
+.contact_container {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto_info-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-main);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-main);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.contacto_name {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-main);
+
+}
+
+.contact_map-sm {
+  display: none;
+}
+
+.contacto_info-container a{
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+
+@media screen and (max-width: 500px){
+    .contact_map-lg{
+        display: none;
+    }
+    .contact_map-sm{
+        display: block;
+    }
+    .contacto_info-container {
+        flex-direction: column-reverse;
+        font-size: .8rem;
+        text-transform: uppercase;
+        width: 80vw;
+    }
+    .contacto_info-container {
+        font-size: .8rem;
+        text-align: center;
+    }
+    .footer{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+    
+    .contact_container{
+      height: 110vh;
+    }
+}

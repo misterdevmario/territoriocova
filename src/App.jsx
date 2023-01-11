@@ -1,6 +1,6 @@
-import { Navbar, Servicios, About } from "./components";
-import casas from "./assets/casas.webp";
+import { Navbar, Servicios, About, Contact } from "./components";
 import "./App.css";
+import w from './assets/whatsapp.svg'
 
 function App() {
   return (
@@ -25,6 +25,8 @@ function App() {
       </div>
       <Servicios />
       <About/>
+      <Contact/>
+      <a className="whatsapp" href="https://api.whatsapp.com/send/?phone=523321818425" target="_blank" ><img src={w} alt="whatsapp link" /></a>
     </div>
   );
 }

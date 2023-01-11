@@ -3,6 +3,17 @@
   min-height: 100vh;
 }
 
+.whatsapp{
+  position: fixed;
+  z-index: 9;
+  right: 2vw;
+  top: 82vh;
+}
+
+.whatsapp img{
+  height: 8vh;
+}
+
 .bg-img {
   width: 100%;
   height: 100vh;
@@ -77,9 +88,11 @@
 
 @media screen and (max-width: 1024px) {
   .bg-info {
-    height: 40%;
+    height: 100%;
     padding: 1vw;
-    margin-bottom: 20%;
+    background-image: url("./assets/casas1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1024px 1050px;
   }
 }
 
@@ -99,5 +112,8 @@
   .bg-info-box1, .bg-info-box2{
     margin: 0;
     width: 90%;
+  }
+  .whatsapp{
+    top: 90vh;
   }
 }

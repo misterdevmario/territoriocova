@@ -39,7 +39,7 @@ const Navbar = () => {
         <a href="#inicio">INICIO</a>
           <a href="#servicios">SERVICIOS</a>
           <a href="#nosotros">NOSOTROS</a>
-          <a href="">CONTACTO</a>
+          <a href="#contacto">CONTACTO</a>
         </div>
       </div>
       <div className="navbar_container-links-toggle">
@@ -64,7 +64,7 @@ const Navbar = () => {
             <a onClick={()=>setToggle(false)} href="#inicio">INICIO</a>
               <a onClick={()=>setToggle(false)} href="#servicios">SERVICIOS</a>
               <a onClick={()=>setToggle(false)} href="#nosotros">NOSOTROS</a>
-              <a onClick={()=>setToggle(false)} href="">CONTACTO</a>
+              <a onClick={()=>setToggle(false)} href="#contacto">CONTACTO</a>
             </div>
           </div>
         )}
